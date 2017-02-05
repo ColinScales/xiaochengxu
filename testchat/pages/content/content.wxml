@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="news-img" src="{{isPlayMusic?post_key.music.coverImgUrl:post_key.news_img}}"></image>
+  <image catchtap="onPlayMusic" class="mic-img" src="{{isPlayMusic?'/image/stopmusic.png':'/image/music.png'}}"></image>
+  <view class="tool">
+    <image class="touxiang-img" src="/image/cat.png"></image>
+    <text class="cnt-txt">Scales</text>
+    <text class="cnt-txt">发表于</text>
+    <text class="cnt-txt">{{post_key.date}}</text>
+  </view>
+  <text class="cnt-title">{{post_key.txtTitle}}</text>
+  <view class="btn">
+    <view class="btn-dbl">
+      <image catchtap="onShareTap" class="btn-img" src="/image/fenxiang.png"></image>
+      <image wx:if="{{collected}}" catchtap="onCollectionTap" class="btn-img" src="/image/shoucang.png"></image>
+      <image wx:else catchtap="onCollectionTap" class="btn-img" src="/image/unshoucang.png"></image>
+    </view>
+    <view class="hr"></view>
+  </view>
+  <text class="content">{{post_key.detail}}</text>
+</view>

@@ -1,0 +1,20 @@
+<template name="news-template">
+  <view class="news">
+    <view class="touxiang">
+      <image src="{{author_img}}"></image>
+      <text>{{data}}</text>
+    </view>
+    <view>
+      <image src="{{news_img}}" class="news-img"></image>
+    </view>
+    <view class="news-txt">
+      <text>{{content}}</text>
+    </view>
+    <view class="star-eye">
+      <image src="/image/star.png"></image>
+      <text>{{collect_num}}</text>
+      <image src="/image/eye.png"></image>
+      <text>{{view_num}}</text>
+    </view>
+  </view>
+</template>

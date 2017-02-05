@@ -1,0 +1,43 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 0;
+    background-color: #fff;  
+    margin-bottom: 30rpx;
+}
+.touxiang image{
+   height: 50rpx;
+   width: 50rpx;
+   margin: 0 20rpx; 
+   vertical-align: middle;
+   margin-bottom: 5rpx;
+}
+.touxiang text{
+   font-size: 12px;
+}
+.news-img{
+    width: 100%; height: 400rpx;
+}
+.news-txt {
+    font-size: 14px;
+    color:#666;
+    margin-left: 20rpx;
+    letter-spacing: 2rpx;
+    line-height: 40rpx;
+}
+.star-eye{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+}
+.star-eye image{
+    width: 30rpx;
+    height:30rpx;
+    vertical-align: middle;
+}
+.star-eye text{
+    font-size: 12px;
+    margin-right: 10rpx;
+    color: #666;
+}

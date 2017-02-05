@@ -1,0 +1,21 @@
+<import src="tpl/news-tpl.wxml"/>
+
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
+        <swiper-item>
+        <image src="/image/wechat01.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+        <image src="/image/wechat02.jpg" class="slide-image" />
+        </swiper-item>
+        <swiper-item>
+        <image src="/image/wechat03.png" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{post_key}}" wx:for-item="item">
+       <view catchtap="newsTap" data-newsid="{{item.newsid}}">
+          <template is="news-template" data="{{...item}}"/>
+       </view>
+    </block>
+    
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+ <image class="cat" src="/image/cat.png"></image>
+ <text>Hello, 静流</text>
+ <view class="tooann" bindtap="onTap">
+   <text class="tooann-text">开启小程序之旅</text>
+ </view>
+</view>

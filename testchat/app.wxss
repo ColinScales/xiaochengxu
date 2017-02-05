@@ -1,0 +1,28 @@
+page{
+    background-color: #b3d4db;
+    font-family: Microsoft YaHei;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat {
+    height: 200rpx;
+    width: 200rpx;
+    margin: 80rpx 0;
+}
+.tooann{
+    margin-top: 100rpx;
+    border: 1px solid #405f80;
+    border-radius: 5px;
+    width: 300rpx;
+    height: 70rpx;
+    text-align: center;
+}
+.tooann-text{
+    line-height: 70rpx;
+    color: #405f80;
+    font-size: 30rpx;
+}
